@@ -1,58 +1,65 @@
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
-  padding: 0;
-  height: 600px;
-  background-image: url(./Pics/index_background.jpg);
+  font-family: 'Open Sans', sans-serif;
+  /* background-image: url(./Pics/index_background.jpg); */
   background-size: cover;
+  color: #1e2a38;
+}
+
+header {
+  background-color: #1e2a38;
+  color: white;
+  padding: 20px 40px ;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: small;
 }
 
 nav{
-  background-color: rgb(182, 186, 64);
-}
-
-main{
-  background-size: cover;
-
-}
-
-nav, main, footer {
-  padding: 20px;
-  border: 0;
+  background-color: #2c3e50;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
 }
 
 nav a {
-  margin: 0 10px;
+  color: #ecf0f1;
   text-decoration: none;
-  color: #0077cc;
+  margin: 0 20px;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+nav a:hover {
+  color: #3498db;
 }
 
-main h2{
-  background-color: rgb(182, 186, 64);
-  color: white;
-  padding: 10px;
-}
-
-.slideshow, .filters {
-  margin: 30px;
+main{
+  background-color: bisque;
+  background-size: cover;
+  text-align: center;
+  padding: 20px 0;
 }
 
 .slideshow-placeholder {
-  background: #eee;
-  height: 200px;
   display: flex;
-  align-items: center;
+  box-sizing: content-box;
+  height: 180px;
   justify-content: center;
-  margin-bottom: 0;
+  text-align: center;
+  margin: 10px;
 }
 
 label{
-  background-color: aqua;
+  background-color: #1e2a38;
+  color: white;
+  font-family: 'Poppins', sans-serif;
 }
 
-footer p{
-  background-color: rgb(182, 186, 64);
-  block-size: auto;
+footer {
+  background-color: #1e2a38;
+  color: white;
+  text-align: center;
+  padding: 20px;
 }
 
 .filter-group {
