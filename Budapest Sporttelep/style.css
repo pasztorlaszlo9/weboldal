@@ -1,0 +1,58 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 600px;
+  background-image: url(./Pics/index_background.jpg);
+  background-size: cover;
+}
+
+nav{
+  background-color: orange;
+}
+
+main{
+  background-size: cover;
+
+}
+
+nav, main, footer {
+  padding: 20px;
+  border: 0;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #0077cc;
+}
+
+main h2{
+  background-color: aqua;
+  color: white;
+  padding: 10px;
+}
+
+.slideshow, .filters {
+  margin: 30px;
+}
+
+.slideshow-placeholder {
+  background: #eee;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0;
+}
+
+label{
+  background-color: aqua;
+}
+
+footer p{
+  background-color: orange;
+}
+.filter-group {
+  margin-bottom: 20px;
+}

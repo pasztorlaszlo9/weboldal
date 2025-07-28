@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Budapest Sporttelepek</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <!-- <h1>Budapest Sporttelepek</h1> -->
+    <nav>
+      <a href="index.html">Főoldal</a>
+      <a href="helyszinek.html">Helyszínek</a>
+      <a href="sportagak.html">Sportágak</a>
+      <a href="kapcsolat.html">Kapcsolat</a>
+      <a href="bejelentkezes.html">Bejelentkezés</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="slideshow">
+      <h2>Legújabb helyszínek</h2>
+      <div class="slideshow-placeholder">[Slideshow helye]</div>
+    </section>
+
+    <section class="filters">
+      <h2>Elérhető helyszínek</h2>
+      <div class="filter-group">
+        <label for="date">Dátum:</label>
+        <input type="date" id="date" name="date">
+      </div>
+      <div class="filter-group">
+        <label for="sport">Sportág:</label>
+        <select id="sport" name="sport">
+          <option value="">-- Válassz sportágat --</option>
+          <option value="tenisz">Tenisz</option>
+          <option value="kosarlabda">Kosárlabda</option>
+          <option value="roplabda">Röplabda</option>
+          <option value="padel">Padel</option>
+          <option value="foci">Nagypályás foci</option>
+        </select>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Budapest Sporttelepek</p>
+  </footer>
+
+</body>
+</html>
