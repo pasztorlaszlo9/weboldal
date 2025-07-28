@@ -8,7 +8,7 @@ body {
 }
 
 nav{
-  background-color: orange;
+  background-color: rgb(182, 186, 64);
 }
 
 main{
@@ -28,7 +28,7 @@ nav a {
 }
 
 main h2{
-  background-color: orange;
+  background-color: rgb(182, 186, 64);
   color: white;
   padding: 10px;
 }
@@ -51,7 +51,7 @@ label{
 }
 
 footer p{
-  background-color: orange;
+  background-color: rgb(182, 186, 64);
   block-size: auto;
 }
 
