@@ -52,7 +52,9 @@ label{
 
 footer p{
   background-color: orange;
+  block-size: auto;
 }
+
 .filter-group {
   margin-bottom: 20px;
 }
