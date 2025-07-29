@@ -67,16 +67,18 @@ main {
 .slideshow-placeholder {
   display: flex;
   box-sizing: content-box;
-  height: 180px;
+  height: auto;
   justify-content: center;
   text-align: center;
   margin: 10px;
 }
 
 img {
-  max-width: 100%;
-  height: auto;
+  max-width: 300px;
+  height: 180px;
   transition: 0.3s;
+  padding: 10px;
+  box-decoration-break: slice;
 }
 
 img:hover {
@@ -101,6 +103,19 @@ footer {
 }
 
 @media (max-width: 600px) {
+
+  .slideshow-placeholder {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  img {
+    max-width: 25vw;
+    height: auto;
+    transition: 0.3s;
+    padding: 10px;
+  }
 
 
   nav ul {
