@@ -125,6 +125,10 @@ footer {
     cursor: text;
   }
 
+  nav a:hover {
+    color: #3498db;
+  }
+
   nav li {
     margin: 10px;
   }
