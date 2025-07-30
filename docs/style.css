@@ -60,7 +60,7 @@ nav a:hover {
   color: #3498db;
 }
 
-main {
+/* main {
   background-color: bisque;
   background-size: cover;
   text-align: center;
@@ -69,8 +69,8 @@ main {
   align-items: center;
   display: flex;
   flex-direction: column;
-  justify-content: center; /* vertical centering */
-}
+  justify-content: center;
+} */
 
 .slideshow-placeholder {
   display: flex;
