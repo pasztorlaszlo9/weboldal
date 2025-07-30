@@ -8,9 +8,10 @@ document.addEventListener('DOMContentLoaded', function() {
     navbarUl.classList.toggle('show-navbar');
     // Optionally toggle icon/text
     if (navbarUl.classList.contains('show-navbar')) {
-      btn.innerHTML = '&#9776;'; // Close icon
+      btn.innerHTML = '&#9776;'; // Hamburger icon
     } else {
       btn.innerHTML = '&#9776;'; // Hamburger icon
     }
   });
 });
+
