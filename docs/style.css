@@ -1,7 +1,6 @@
 body {
   margin: 0;
   font-family: 'Open Sans', sans-serif;
-  /* background-image: url(./Pics/index_background.jpg); */
   background-size: cover;
   color: #1e2a38;
 }
@@ -67,18 +66,24 @@ main {
 .slideshow-placeholder {
   display: flex;
   box-sizing: content-box;
+  flex-wrap: wrap;
+  align-items: center;
   height: auto;
   justify-content: center;
   text-align: center;
-  margin: 10px;
+  margin: 25px;
 }
 
 img {
   max-width: 300px;
   height: 180px;
   transition: 0.3s;
-  padding: 10px;
-  box-decoration-break: slice;
+  padding: 5px;
+  background-color: #d5daa1;
+  display: block;
+  margin: 10px;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 img:hover {
@@ -112,9 +117,9 @@ footer {
 
   img {
     max-width: 25vw;
-    height: auto;
+    height: 100px;
     transition: 0.3s;
-    padding: 10px;
+    padding: 5px;
   }
 
 
