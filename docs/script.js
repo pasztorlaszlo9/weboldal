@@ -25,6 +25,8 @@ document.addEventListener('DOMContentLoaded', function() {
       // Find the select and date input in this row
       const sport = row.querySelector('select[name="sport"]');
       const date = row.querySelector('input[type="date"]');
+      const timeFrom = row.querySelector('input[name="time-from"]');
+      const timeTo = row.querySelector('input[name="time-to"]');
 
       if (!sport.value) {
         alert('Kérlek, válassz sportágat!');
@@ -32,6 +34,15 @@ document.addEventListener('DOMContentLoaded', function() {
       }
       if (!date.value) {
         alert('Kérlek, válassz dátumot!');
+        return;
+      }
+
+      if (!timeFrom.value) {
+        alert('Kérlek, válassz kezdő időpontot!');
+        return;
+      }
+      if (!timeTo.value) {
+        alert('Kérlek, válassz végző időpontot!');
         return;
       }
 
