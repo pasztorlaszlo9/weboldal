@@ -16,5 +16,55 @@ document.addEventListener('DOMContentLoaded', function() {
       btn.innerHTML = '&#9776;'; // Hamburger icon
     }
   });
+  document.querySelectorAll('.reserve-btn').forEach(function(btn) {
+    btn.addEventListener('click', function(event) {
+      event.preventDefault();
+
+      // Find the closest table row
+      const row = btn.closest('tr');
+      // Find the select and date input in this row
+      const sport = row.querySelector('select[name="sport"]');
+      const date = row.querySelector('input[type="date"]');
+
+      if (!sport.value) {
+        alert('Kérlek, válassz sportágat!');
+        return;
+      }
+      if (!date.value) {
+        alert('Kérlek, válassz dátumot!');
+        return;
+      }
+
+      alert('Foglalás elküldve');
+      // Optionally, you can redirect or submit here
+      // window.location.href = 'helyszinek.html';
+    });
+  });
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+  if (window.innerWidth <= 600) {
+    const tableRows = document.querySelectorAll('.table tr:not(.header-row)');
+    tableRows.forEach(row => {
+      const img = row.querySelector('img');
+      if (img) {
+        img.style.cursor = 'pointer';
+        img.addEventListener('click', function() {
+          if (row.classList.contains('expanded')) {
+            // Collapse: remove expanded and show all rows
+            row.classList.remove('expanded');
+            tableRows.forEach(r => r.style.display = 'table-row');
+          } else {
+            // Expand: hide all rows, show only this one
+            tableRows.forEach(r => {
+              r.classList.remove('expanded');
+              r.style.display = 'none';
+            });
+            row.classList.add('expanded');
+            row.style.display = 'table-row';
+          }
+        });
+      }
+    });
+  }
+});

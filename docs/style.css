@@ -62,7 +62,7 @@ main {
   background-color: bisque;
   background-size: cover;
   text-align: center;
-  padding: 20px 0;
+  padding: 40px 0;
   flex: 1;
   align-items: center;
   display: flex;
@@ -83,7 +83,7 @@ main {
 
 img {
   max-width: 300px;
-  height: 150px;
+  max-height: 150px;
   transition: 0.3s;
   padding: 5px;
   background-color: #d5daa1;
@@ -115,6 +115,49 @@ footer {
   margin-bottom: 20px;
 }
 
+.locations {
+  padding: 20px;
+  margin: 0;
+}
+
+.table {
+  display: flex;
+  box-sizing: content-box;
+  flex-wrap: wrap;
+  align-items: center;
+  height: auto;
+  justify-content: center;
+  text-align: center;
+  margin: 25px;
+}
+
+.table img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.table th,
+.table td {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.table td > * {
+  margin-left: auto;
+  margin-right: auto;
+}
+.table,
+.table th,
+.table td {
+  border: none !important;
+  border-collapse: collapse;
+  box-shadow: none;
+}
+
+
+
 @media (max-width: 600px) {
 
   img {
@@ -122,7 +165,7 @@ footer {
     transition: 0.3s;
     padding: 5px;
   }
-  
+
   nav ul {
     display: none;
     flex-direction: column;
@@ -149,6 +192,54 @@ footer {
 
   nav li {
     margin: 10px;
+  }
+
+  .table {
+    width: 100%;
+    overflow-x: auto;
+  }
+
+  .table th:not(:first-child),
+  .table td:not(:first-child) {
+    display: none;
+  }
+
+  .table tr.expanded td,
+  .table tr.expanded th {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 10px 5px;
+  }
+
+  /* .table tr:not(.expanded) {
+    display: none;
+  } */
+  .table tr.expanded {
+    display: table-row;
+  }
+
+  .table tr.header-row {
+    display: table-row;
+  }
+
+  .table tr.expanded td,
+  .table tr.expanded th {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: left;
+    padding: 10px 5px;
+  }
+
+  .table tr.expanded td:not(:last-child),
+  .table tr.expanded th:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  .table th{
+    display: none;
   }
 
 }
