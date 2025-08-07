@@ -156,6 +156,14 @@ footer {
   box-shadow: none;
 }
 
+#address{
+  display: none;
+}
+
+.address-td {
+  display: none;
+}
+
 
 
 @media (max-width: 600px) {
@@ -213,9 +221,6 @@ footer {
     padding: 10px 5px;
   }
 
-  /* .table tr:not(.expanded) {
-    display: none;
-  } */
   .table tr.expanded {
     display: table-row;
   }
