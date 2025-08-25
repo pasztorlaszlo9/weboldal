@@ -22,6 +22,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
       // Find the closest table row
       const row = btn.closest('tr');
+      const img = row.querySelector('img');
+      const imgName = img ? img.name : '';
       // Find the select and date input in this row
       const sport = row.querySelector('select[name="sport"]');
       const location = row.querySelector('select[name="location"]');
@@ -51,6 +53,7 @@ document.addEventListener('DOMContentLoaded', function () {
       }
 
       const templateParams = {
+        img_name: imgName,
         sport: sport ? sport.options[sport.selectedIndex].text : '',
         location: location ? location.options[location.selectedIndex].text : '',
         date: date.value,
