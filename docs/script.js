@@ -88,6 +88,47 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 document.addEventListener('DOMContentLoaded', function () {
+  const contactBtn = document.querySelector('.contact-btn');
+  if (contactBtn) {
+    contactBtn.addEventListener('click', function (event) {
+      event.preventDefault();
+
+      const emailInput = document.getElementById('floatingInput');
+      const messageInput = document.getElementById('messageInput');
+
+      const email = emailInput ? emailInput.value.trim() : '';
+      const message = messageInput ? messageInput.value.trim() : '';
+
+      if (!email) {
+        alert('Kérlek, add meg az email címed!');
+        return;
+      }
+      if (!message) {
+        alert('Kérlek, írd meg az üzeneted!');
+        return;
+      }
+
+      const templateParams = {
+        user_email: email,
+        user_message: message
+      };
+
+      emailjs.send('sporttelepek_0825', 'template_fhn9jml', templateParams)
+        .then(function (response) {
+          alert('Üzenet elküldve');
+          // Reset fields
+          emailInput.value = '';
+          messageInput.value = '';
+        }, function (error) {
+          alert('Hiba történt az üzenet elküldésekor.');
+        });
+    });
+  }
+});
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
   if (window.innerWidth <= 600) {
     const tableRows = document.querySelectorAll('.table tr:not(.header-row)');
     tableRows.forEach(row => {
