@@ -10,7 +10,14 @@
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@600&display=swap">
   <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script>
+    (function () {
+      emailjs.init("__s7hNRM8XTSCfrSd"); // Replace with your EmailJS public key
+    })();
+  </script>
   <script src="./script.js"></script>
+  
 </head>
 
 <body>
@@ -60,8 +67,7 @@
             <label for="time-from">Időpont:</label>
             <input type="time" id="time-from" name="time-from">
             <input type="time" id="time-to" name="time-to">
-            <button class="reserve-btn btn btn-primary"
-              onclick="window.location.href = 'helyszinek.html'">Foglalás</button>
+            <button type="button" class="reserve-btn btn btn-primary">Foglalás</button>
           </div>
         </td>
       </tr>
@@ -88,8 +94,7 @@
             <label for="time-from">Időpont:</label>
             <input type="time" id="time-from" name="time-from">
             <input type="time" id="time-to" name="time-to">
-            <button class="reserve-btn btn btn-primary"
-              onclick="window.location.href = 'helyszinek.html'">Foglalás</button>
+            <button type="button" class="reserve-btn btn btn-primary">Foglalás</button>
           </div>
         </td>
       </tr>
@@ -116,8 +121,7 @@
             <label for="time-from">Időpont:</label>
             <input type="time" id="time-from" name="time-from">
             <input type="time" id="time-to" name="time-to">
-            <button class="reserve-btn btn btn-primary"
-              onclick="window.location.href = 'helyszinek.html'">Foglalás</button>
+            <button type="button" class="reserve-btn btn btn-primary">Foglalás</button>
           </div>
         </td>
     </table>

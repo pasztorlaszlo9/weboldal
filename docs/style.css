@@ -120,6 +120,11 @@ footer {
   margin: 0;
 }
 
+.sports{
+  padding: 20px;
+  margin: 0;
+}
+
 .table {
   display: flex;
   box-sizing: content-box;

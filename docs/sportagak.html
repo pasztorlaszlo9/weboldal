@@ -10,7 +10,14 @@
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@600&display=swap">
   <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script>
+    (function () {
+      emailjs.init("__s7hNRM8XTSCfrSd"); // Replace with your EmailJS public key
+    })();
+  </script>
   <script src="./script.js"></script>
+
 </head>
 
 <body>
@@ -29,7 +36,89 @@
     </ul>
   </nav>
   <main>
-
+    <h1 class="sports">Sportágak</h1>
+    <table class="table">
+      <tr class="header-row">
+        <th scope="col" id="sport">Sportág</th>
+        <th scope="col" id="address">Cím</th>
+        <th scope="col" id="location">Helyszín</th>
+        <th scope="col" id="reserve">Foglalás</th>
+      </tr>
+      <tr>
+        <td><img src="./Pics/slideshow_4.jpg" class="img-bpsport4" title="Műfűves labdarúgás"></td>
+        <!-- <td class="address-td">1111 Budapest, Sport utca 1.</td> -->
+        <td>
+          <div class="filter-group">
+            <label for="location">Helyszínek:</label>
+            <select id="location" name="location">
+              <option value="">-- Válassz Helyszínt --</option>
+              <option value="bpsport1">BP sport 1</option>
+              <option value="bpsport2">BP sport 2</option>
+              <option value="bpsport3">BP sport 3</option>
+            </select>
+          </div>
+        </td>
+        <td>
+          <div class="filter-group">
+            <label for="date">Dátum:</label>
+            <input type="date" id="date" name="date">
+            <label for="time-from">Időpont:</label>
+            <input type="time" id="time-from" name="time-from">
+            <input type="time" id="time-to" name="time-to">
+            <button type="button" class="reserve-btn btn btn-primary">Foglalás</button>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td><img src="./Pics/slideshow_5.jpg" class="img-bpsport5" title="Röplabda"></td>
+        <!-- <td class="address-td">2222 Budapest, Sport tér 2.</td> -->
+        <td>
+          <div class="filter-group">
+            <label for="location">Helyszínek:</label>
+            <select id="location" name="location">
+              <option value="">-- Válassz Helyszínt --</option>
+              <option value="bpsport1">BP sport 1</option>
+              <option value="bpsport2">BP sport 2</option>
+              <option value="bpsport3">BP sport 3</option>
+            </select>
+          </div>
+        </td>
+        <td>
+          <div class="filter-group">
+            <label for="date">Dátum:</label>
+            <input type="date" id="date" name="date">
+            <label for="time-from">Időpont:</label>
+            <input type="time" id="time-from" name="time-from">
+            <input type="time" id="time-to" name="time-to">
+            <button type="button" class="reserve-btn btn btn-primary">Foglalás</button>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td><img src="./Pics/slideshow_3.jpg" class="img-bpsport3" title="Tenisz"></td>
+        <!-- <td class="address-td">3333 Budapest, Sport körút 3.</td> -->
+        <td>
+          <div class="filter-group">
+            <label for="locations">Helyszínek:</label>
+            <select id="location" name="location">
+              <option value="">-- Válassz Helyszínt --</option>
+              <option value="bpsport1">BP sport 1</option>
+              <option value="bpsport2">BP sport 2</option>
+              <option value="bpsport3">BP sport 3</option>
+            </select>
+          </div>
+        </td>
+        <td>
+          <div class="filter-group">
+            <label for="date">Dátum:</label>
+            <input type="date" id="date" name="date">
+            <label for="time-from">Időpont:</label>
+            <input type="time" id="time-from" name="time-from">
+            <input type="time" id="time-to" name="time-to">
+            <button type="button" class="reserve-btn btn btn-primary">Foglalás</button>
+          </div>
+        </td>
+    </table>
   </main>
   <footer>
     <p>&copy; 2025 Budapest Sporttelepek</p>
